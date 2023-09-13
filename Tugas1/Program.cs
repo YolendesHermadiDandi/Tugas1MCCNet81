@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿//Yolendes Hermadi Dandi
+
+using System.Collections.Generic;
 
 namespace Tugas1;
 
