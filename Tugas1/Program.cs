@@ -11,14 +11,14 @@ public class program
     /*
      * Melakukan eksekusi method yang telah dibuat
      */
-    static void Main()
-    {
-        menu();
-    }
+    //static void Main()
+    //{
+    //    menu();
+    //}
 
     /* Menampilkan Menu
      */
-    static void menu()
+    public static void menu()
     {
 
         Boolean menuLoop = true; //pembatasan looping 

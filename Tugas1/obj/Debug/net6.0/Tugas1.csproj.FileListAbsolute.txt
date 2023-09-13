@@ -13,3 +13,18 @@ C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\TUGAS1MCC81NET\Tugas1\obj
 C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\TUGAS1MCC81NET\Tugas1\obj\Debug\net6.0\Tugas1.pdb
 C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\TUGAS1MCC81NET\Tugas1\obj\Debug\net6.0\Tugas1.genruntimeconfig.cache
 C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\TUGAS1MCC81NET\Tugas1\obj\Debug\net6.0\ref\Tugas1.dll
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\bin\Debug\net6.0\Tugas1.exe
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\bin\Debug\net6.0\Tugas1.deps.json
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\bin\Debug\net6.0\Tugas1.runtimeconfig.json
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\bin\Debug\net6.0\Tugas1.dll
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\bin\Debug\net6.0\Tugas1.pdb
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.csproj.AssemblyReference.cache
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.AssemblyInfoInputs.cache
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.AssemblyInfo.cs
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.csproj.CoreCompileInputs.cache
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.dll
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\refint\Tugas1.dll
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.pdb
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\Tugas1.genruntimeconfig.cache
+C:\Users\Yoheda\Downloads\MII MCC 81 Traning\C# coding\Github upload\Tugas1MCCNet81\Tugas1\obj\Debug\net6.0\ref\Tugas1.dll
