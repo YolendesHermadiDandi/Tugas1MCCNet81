@@ -61,7 +61,7 @@ public class program
                     Console.Write("masukan Limit : ");
                     String limitInput = Console.ReadLine();
 
-                    if (slimitInput.All(Char.IsDigit) == true)
+                    if (limitInput.All(Char.IsDigit) == true)
                     {
 
                         printEvenOdd(int.Parse(limitInput), choseSelect); //Jalankan method printEvenOdd
