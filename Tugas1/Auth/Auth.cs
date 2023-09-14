@@ -24,6 +24,11 @@ namespace Tugas1.Auth
 
         }
 
+
+        /*
+         * Metod dibawah digunakan untuk mencetak menu dari tampilan awal aplikasi
+         * 
+         */
         public static void Menu()
         {
             Boolean menuloop = true;
@@ -83,7 +88,11 @@ namespace Tugas1.Auth
 
         }
 
-
+        /*
+         * Method dibawah digunakan untuk menambahkan user baru
+         * 
+         * 
+         */
         public static void CreateUser()
         {
 
@@ -95,52 +104,25 @@ namespace Tugas1.Auth
 
         }
 
+
+        /*
+         * Method dibawah digunakan untuk malakukan validasi terhadap inputan user
+         * dan membuat username secara otomatis
+         */
         private static Employees UserInputValidation()
         {
 
             String firstName;
             String lastName;
             String password;
-            //First Name Validasi
-            Boolean firstNameCheck = true;
-            do
-            {
-                Console.Write("First Name :");
-                firstName = Console.ReadLine();
-                firstNameCheck = LastNameFirstNameCheck(firstName);
 
-            } while (firstNameCheck);
+            //Cek Validasi
+            firstName = InputCheck("First Name : "); //cek inputan first name
+            lastName = InputCheck("Last Name : "); // cek inputan last name
+            password = InputCheck("Password : "); // cek inputan password
 
 
-            //Last Name Validasi
-            Boolean lastNameCheck = true;
-            do
-            {
-                Console.Write("Last Name : ");
-                lastName = Console.ReadLine();
-                lastNameCheck = LastNameFirstNameCheck(lastName);
-            } while (lastNameCheck);
-
-            //Password Validasi
-            Boolean passwordCheck = true;
-            do
-            {
-                Console.Write("Password : ");
-                password = Console.ReadLine();
-                if (password.Length < 8 ||
-                    password.All(Char.IsDigit) ||
-                    password.All(Char.IsUpper) || password.All(Char.IsLower))
-                {
-                    Console.WriteLine("PASSWORD MINIMAL MEMILIKI 8 KARAKTER !!");
-                    Console.WriteLine("PASSWORD HARUS TERDIRI DARI HURUF BESAR, HURUF KECIL DAN ANGKA");
-                }
-                else
-                {
-                    passwordCheck = false;
-                }
-
-            } while (passwordCheck);
-
+            //membuat username secara otomatis 
             String username = firstName.Substring(0, 2) + "" + lastName.Substring(0, 2);
             foreach (var item in daftarKaryawan)
             {
@@ -153,12 +135,15 @@ namespace Tugas1.Auth
 
 
             Employees user = new Employees(firstName, lastName, password, username);
-
+           
             return user;
+
         }
 
-
-
+        /*
+         * Method dibawah digunakan untuk menampilkan semua user yang disimpan
+         * 
+         */
         public static void ShowUser()
         {
 
@@ -223,6 +208,9 @@ namespace Tugas1.Auth
             } while (showUserselect);
         }
 
+        /*
+         * Method dibawah digunakan untuk melalukan edit terhadap data user berdasarkan ID
+         */
         public static void EditUser(int id)
         {
 
@@ -247,12 +235,19 @@ namespace Tugas1.Auth
 
         }
 
+        /*
+         * Method dibawah digunakan untuk menghapus user berdasarkan ID
+         */
         public static void DeleteUser(int id)
         {
             daftarKaryawan.Remove(id);
             Console.WriteLine("DATA BERHASIL DIHAPUS");
         }
 
+        /*
+         * Method dibawah digunakan untuk mencari user berdasarkan nama user
+         * 
+         */
         public static void SearchUser(String name)
         {
 
@@ -268,7 +263,7 @@ namespace Tugas1.Auth
 
         }
 
-
+        // Method dibawah digunakan untuk login
         public static String Login()
         {
             Console.Write("Username : ");
@@ -290,14 +285,59 @@ namespace Tugas1.Auth
 
         }
 
-        public static Boolean LastNameFirstNameCheck(String input)
+
+        /*
+         * 
+         * 
+         * Method dibawah digunakan untuk melakukan pengecekan dari input user
+         *
+         *
+         *@PHARAM inputType :   digunakan untuk memilih input berdasarkan field yang ada :
+         *                      First Name, Last Name, Password
+         */
+        private static String InputCheck(String inputType)
         {
-            if (string.IsNullOrEmpty(input) || input.Any(Char.IsDigit) || input.Length < 2)
+            Boolean checkvalidation = true;
+            String input ="";
+
+            do
             {
-                Console.WriteLine("INPUTAN TIDAK FALID");
-                return true;
-            }
-            return false;
+                if (inputType.Equals("First Name : ") || inputType.Equals("Last Name : "))
+                {
+                    Console.Write(inputType);
+                    input = Console.ReadLine();
+                    if (string.IsNullOrEmpty(input) || input.Any(Char.IsDigit) || input.Length < 2)
+                    {
+                        Console.WriteLine("INPUTAN TIDAK FALID");
+
+                    }
+                    else
+                    {
+                        checkvalidation = false;
+                    }
+                }
+                else if (inputType.Equals("Password : "))
+                {
+                    Console.Write("Password : ");
+                    input = Console.ReadLine();
+                    if (input.Length < 8 ||
+                        !input.Any(Char.IsDigit) ||
+                        !input.Any(Char.IsUpper) || !input.Any(Char.IsLower))
+                    {
+                        Console.WriteLine("PASSWORD MINIMAL MEMILIKI 8 KARAKTER !!");
+                        Console.WriteLine("PASSWORD HARUS TERDIRI DARI HURUF BESAR, HURUF KECIL DAN ANGKA");
+                    }
+                    else
+                    {
+                        checkvalidation = false;
+                    }
+
+                }
+
+
+            } while (checkvalidation);
+
+            return input;
 
         }
 

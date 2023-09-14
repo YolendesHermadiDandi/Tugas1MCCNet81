@@ -12,7 +12,7 @@ namespace Tugas1.Auth
     {
 
      
-       
+       public Employees() { }
         public Employees(String firstName, String lastName, String password, String username) {
             this.FirstName = firstName;
             this.LastName = lastName;
