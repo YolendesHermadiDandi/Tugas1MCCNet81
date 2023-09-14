@@ -6,7 +6,8 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using Tugas1;
+using Tugas1.EvenOdd;
+using Tugas1.User;
 
 namespace Tugas1.Auth
 {
@@ -68,7 +69,7 @@ namespace Tugas1.Auth
                         if (status == "Berhasil")
                         {
                             Console.WriteLine("Login Berhasil");
-                            Tugas1.program.menu();
+                            program.menu();
 
 
                         }
